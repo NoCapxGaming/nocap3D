@@ -1,0 +1,140 @@
+/*NoCap3D Template Details*/
+/*Colors:
+#FFEA00
+#BD3BFF
+#BF0011
+#00C8E7
+*/
+
+body {
+    margin: 0px;
+    overflow: hidden;
+    background: black;
+}
+
+.v3d-container {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 50%;
+}
+
+.fullscreen-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    display: none;
+    z-index: 1;
+}
+
+.fullscreen-open {
+    background-image: url('media/fullscreen_open.svg');
+}
+
+.fullscreen-close {
+    background-image: url('media/fullscreen_close.svg');
+}
+
+/* removes tap blinking on ios devices */
+* { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+/* Top Navigation CSS */
+/*Colors:
+#FFEA00
+#BD3BFF
+#BF0011
+#00C8E7
+*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background: linear-gradient(to bottom, black 80%, rgba(0,0,0,0) 100%);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav img {
+position: relative;
+text-align: center;
+top: 6px;
+left: 10px;
+width: 50px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+  font-weight: lighter;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: gold;
+  font-weight: bolder;
+  text-shadow: 2 2 white;
+  background-color: linear-gradient(to bottom, purple 80%, rgba(0,0,0,0) 100%);
+
+}
+.topnav a.active:hover {
+  color: black;
+  font-weight: bolder;
+  background-color: linear-gradient(to bottom, purple 80%, rgba(0,0,0,0) 100%);
+
+}
+
+
+/*Video Backgroun CSS*/
+
+/* Style the video: 100% width and height to cover the entire window */
+#background-video {
+  position: relative;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  left: -12.5%;
+  width: 125%;
+  height: 200%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+.wrapper video {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.wrapper .overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to bottom, black 80%, rgba(0,0,0,0) 100%);
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
