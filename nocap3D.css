@@ -18,6 +18,7 @@ body {
     left: 0px;
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
 
 .fullscreen-button {
@@ -29,7 +30,6 @@ body {
     cursor: pointer;
     background-size: 100% 100%;
     display: none;
-    z-index: 1;
 }
 
 .fullscreen-open {
@@ -54,6 +54,7 @@ body {
 .topnav {
   background: linear-gradient(to bottom, black 80%, rgba(0,0,0,0) 100%);
   overflow: hidden;
+  z-index: 1;
 }
 
 /* Style the links inside the navigation bar */
@@ -181,10 +182,29 @@ width: 50px;
     margin-top: 5%;
     bottom: 2%;
     font-size: 12px;
-  }
+    position: static;
 }
 @media only screen and (hover: none) and (pointer: coarse){
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
 }
 /* Next & previous buttons */
 .prev, .next {
