@@ -21,6 +21,16 @@ body {
     z-index: -5;
 }
 
+.v3d-simple-preloader-background{
+  background-color: black;
+}
+.v3d-simple-preloader-bar {
+    background: gold;
+}
+.v3d-simple-preloader-logo {
+    background-image: url("media/nocap_minxl.png");
+    background-size: cover;
+}
 .fullscreen-button {
     position: absolute;
     top: 5px;
