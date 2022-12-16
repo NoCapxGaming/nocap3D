@@ -62,10 +62,7 @@ body {
 #00C8E7
 */
 /* Add a black background color to the top navigation */
-.topnav {
-  background: linear-gradient(to bottom, black 80%, rgba(0,0,0,0) 100%);
-  overflow: hidden;
-}
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -143,20 +140,32 @@ width: 50px;
   border-right: .15em solid gold; /* The typwriter cursor */
   color: white;
   font-family: 'Roboto Mono', monospace;
-  display: inline-grid;
-  white-space: nowrap; /* Keeps the content on a single line */
+  display: inline-flex;
+  white-space: pre-line;; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .10em; /* Adjust as needed */
   animation:
     typing 3s steps(40, end),
     blink-caret .75s step-end infinite;
 }
-
+.typewriter2 h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid pink; /* The typwriter cursor */
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  display: inline-flex;
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation:
+    typing 3s steps(40, end),
+    blink-caret2 .75s step-end infinite;
+}
 .center-h h1 {
   margin-left: 50%;
   margin-top: 2em;
   transform: translate(-50%, -50%);
-
+  overflow: hidden;
 }
 
 /* The typing effect */
@@ -172,6 +181,23 @@ width: 50px;
 
 }
 @keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* The typing effect */
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret2 {
+  from, to { border-color: transparent }
+  50% { border-color: gold; }
+
+}
+@keyframes blink2 {
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
@@ -346,4 +372,40 @@ width: 50px;
   display: inline-block;
   font-size: 25px;
 
+}
+
+#video_rotate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#caprotate {
+  max-height: 250px;
+}
+#video_preset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wallpapervideos {
+  max-height: 250px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
