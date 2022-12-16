@@ -170,7 +170,7 @@ width: 50px;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .10em; /* Adjust as needed */
   animation:
-    typing 3s steps(40, end),
+    typing2 3s steps(40, end),
     blink-caret2 .75s step-end infinite;
 }
 .center-h h1 {
@@ -180,10 +180,22 @@ width: 50px;
   overflow: hidden;
 }
 
+.left-h h1 {
+  margin-left: 20%;
+  margin-top: 2em;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.right-h h1 {
+  margin-left: 80%;
+  margin-top: 2em;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 50% }
+  to { width: 30% }
 }
 
 /* The typewriter cursor effect */
@@ -200,7 +212,7 @@ width: 50px;
 /* The typing effect 2 */
 @keyframes typing2 {
   from { width: 0 }
-  to { width: 50% }
+  to { width: 30% }
 }
 
 /* The typewriter cursor effect 2 */
@@ -284,6 +296,9 @@ width: 50px;
 #wallpapervideos {
   max-height: 250px;
 }
+#about_art {
+  max-height: 250px;
+}
 .column {
   float: left;
   width: 33.33%;
@@ -302,4 +317,11 @@ width: 50px;
     display: block;
     margin-bottom: 20px;
   }
+}
+#about_p {
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-left: 15%;
 }
