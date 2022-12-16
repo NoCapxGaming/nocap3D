@@ -245,7 +245,6 @@ width: 50px;
 .centerlinks {
   margin-left: 50%;
   margin-top: 2em;
-  justify-content: center;
   display: inline-flex;
   text-decoration: none;
   transform: translate(-50%, -50%);
@@ -253,7 +252,7 @@ width: 50px;
 }
 .button {
   background-color: black;
-  background-clip: content-box;
+  background-clip: border-box;
   color: gold;
   font-family: 'Roboto Slab', serif;
   font-style: italic;
@@ -272,7 +271,7 @@ width: 50px;
 }
 .button:hover {
   background-color: black;
-  background-clip: content-box;
+  background-clip: border-box;
   color: white;
   font-family: 'Roboto Slab', serif;
   font-style: italic;
