@@ -148,6 +148,7 @@ width: 50px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid gold; /* The typwriter cursor */
   color: white;
+  font-size: 36px;
   font-family: 'Roboto Mono', monospace;
   display: inline-flex;
   white-space: pre-line;; /* Keeps the content on a single line */
@@ -161,6 +162,8 @@ width: 50px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid pink; /* The typwriter cursor */
   color: white;
+  font-size: 24px;
+
   font-family: 'Roboto Mono', monospace;
   display: inline-flex;
   white-space: nowrap; /* Keeps the content on a single line */
