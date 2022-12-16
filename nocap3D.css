@@ -391,6 +391,10 @@ width: 50px;
 #caprotate {
   max-height: 250px;
 }
+#construction {
+  max-width: 100%;
+  display: inline-flex;
+}
 #video_preset {
   display: flex;
   flex-direction: column;
