@@ -242,7 +242,7 @@ width: 50px;
   position: flex;
 }
 
-.center {
+.centerlinks {
   margin-left: 50%;
   margin-top: 2em;
   justify-content: center;
