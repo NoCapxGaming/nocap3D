@@ -214,28 +214,6 @@ width: 50px;
   50% { border-color: orange; }
 }
 
-
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
 .container {
   height: auto;
   top: 2em;
@@ -245,7 +223,7 @@ width: 50px;
 .centerlinks {
   margin-left: 50%;
   margin-top: 2em;
-  display: inline-flex;
+  position: absolute;
   text-decoration: none;
   transform: translate(-50%, -50%);
   overflow: hidden;
@@ -263,9 +241,7 @@ width: 50px;
   border-radius: 35px;
   border-color: #BD3BFF;
   border-width: 6px;
-  display: inline-flex;
   font-size: 25px;
-  justify-content: center;
   cursor: pointer;
   text-decoration: none;
 }
