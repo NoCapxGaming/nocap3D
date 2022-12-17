@@ -390,6 +390,9 @@ width: 50px;
 #wallpapervideos {
   max-height: 250px;
 }
+#gifvideos {
+  max-height: 100px;
+}
 #about_art {
   max-height: 250px;
 }
@@ -400,6 +403,17 @@ width: 50px;
 
 /* Clear floats after the columns */
 .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column2 {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row2:after {
   content: "";
   display: table;
   clear: both;
@@ -425,6 +439,15 @@ width: 50px;
   #about_p {
     font-size: 15px;
   }
+  .column h1 {
+    font-size: 23px;
+  }
+  .column2 h1 {
+    font-size: 15px;
+  }
+  #wallpapervideos {
+    max-width: 150px;
+  }
 }
 @media screen and (max-width: 400px) {
   #about_p {
@@ -432,7 +455,7 @@ width: 50px;
     margin-bottom: 5em;
   }
   .topnav a {
-    font-size: 15px;
+    font-size: 18px;
 
   }
   .left-h h1 {
