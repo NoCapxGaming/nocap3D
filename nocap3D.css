@@ -17,7 +17,6 @@ html,body
 
 body {
     margin: 0px;
-    overflow-x: hidden;
     background: black;
 }
 
@@ -191,6 +190,23 @@ width: 50px;
   margin-top: 2em;
   transform: translate(-50%, -50%);
   overflow: hidden;
+}.center-p p {
+  margin-left: 50%;
+  margin-top: 2em;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.left-p {
+  margin-left: 35%;
+  margin-top: 2em;
+  transform: translate(-50%, -50%);
+}
+.right-p p {
+  margin-left: 80%;
+  margin-top: 2em;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 /* The typing effect */
 @keyframes typing {
@@ -240,7 +256,15 @@ width: 50px;
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
-.button {
+.centersocial {
+  margin-left: 50%;
+  margin-top: 5em;
+  position: absolute;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
+  overflow-y: hidden;
+}
+.button_zedge {
   background-color: black;
   background-clip: border-box;
   color: gold;
@@ -257,7 +281,7 @@ width: 50px;
   cursor: pointer;
   text-decoration: none;
 }
-.button:hover {
+.button_zedge:hover {
   background-color: black;
   background-clip: border-box;
   color: white;
@@ -275,7 +299,77 @@ width: 50px;
   cursor: pointer;
   text-decoration: none;
 }
-
+.button_twitch {
+  background-color: black;
+  background-clip: border-box;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 5px;
+  padding: 2px 15px;
+  padding-bottom: 3px;
+  border-radius: 35px;
+  border-color:  #cc00ff;
+  border-width: 6px;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button_twitch:hover {
+  background-color: black;
+  background-clip: border-box;
+  color: #cc00ff;
+  font-family: 'Roboto Slab', serif;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 5px;
+  padding: 2px 15px;
+  border-radius: 35px;
+  border-color: gray;
+  border-width: 6px;
+  text-align: center;
+  display: inline-flex;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button_youtube {
+  background-color: black;
+  background-clip: border-box;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin-top: 2em;
+  padding: 2px 15px;
+  padding-bottom: 3px;
+  border-radius: 35px;
+  border-color:  #cc0000;
+  border-width: 6px;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button_youtube:hover {
+  background-color: black;
+  background-clip: border-box;
+  color: #cc00ff;
+  font-family: 'Roboto Slab', serif;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 5px;
+  padding: 2px 15px;
+  border-radius: 35px;
+  border-color: gray;
+  border-width: 6px;
+  text-align: center;
+  display: inline-flex;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
 #video_rotate {
   display: flex;
   flex-direction: column;
@@ -316,6 +410,7 @@ width: 50px;
     width: 100%;
     display: block;
     margin-bottom: 20px;
+    overflow: hidden;
   }
 }
 #about_p {
@@ -324,4 +419,117 @@ width: 50px;
   font-size: 18px;
   letter-spacing: 3px;
   margin-left: 15%;
+  max-width: 550px;
+}
+@media screen and (max-width: 600px) {
+  #about_p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #about_p {
+    font-size: 15px;
+    margin-bottom: 5em;
+  }
+  .topnav a {
+    font-size: 15px;
+
+  }
+  .left-h h1 {
+    font-size: 25px;
+  }
+}
+.fa {
+  padding: 20px;
+  font-size: 25px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 5px 2px;
+}
+.fa:hover {
+    background-color: gray;
+    border-color: white;
+}
+@media screen and (max-width: 600px) {
+  .fa {
+    padding: 18px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px 2px;
+  }
+  .fa:hover {
+      background-color: black;
+      border-color: white;
+  }
+}
+@media screen and (max-width: 400px) {
+  .fa {
+    display: inline;
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px 2px;
+  }
+  .fa:hover {
+      background-color: black;
+      border-color: white;
+  }
+}
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
