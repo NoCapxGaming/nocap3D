@@ -398,7 +398,7 @@ width: 50px;
 }
 .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
 }
 
 /* Clear floats after the columns */
@@ -414,6 +414,28 @@ width: 50px;
 
 /* Clear floats after the columns */
 .row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column3 {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row3:after {
   content: "";
   display: table;
   clear: both;
@@ -438,6 +460,7 @@ width: 50px;
 @media screen and (max-width: 600px) {
   #about_p {
     font-size: 15px;
+    margin-right: 2em;
   }
   .column h1 {
     font-size: 23px;
@@ -446,13 +469,17 @@ width: 50px;
     font-size: 15px;
   }
   #wallpapervideos {
-    max-width: 150px;
+    max-width: 200px;
   }
 }
 @media screen and (max-width: 400px) {
   #about_p {
     font-size: 15px;
+    margin-right: 2em;
     margin-bottom: 5em;
+  }
+  #wallpapervideos {
+    max-width: 150px;
   }
   .topnav a {
     font-size: 18px;
