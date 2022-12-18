@@ -437,7 +437,7 @@ width: 50px;
   clear: both;
 }
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .column {
     width: 100%;
     display: block;
