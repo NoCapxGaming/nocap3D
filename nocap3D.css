@@ -396,10 +396,6 @@ width: 50px;
 #about_art {
   max-height: 250px;
 }
-.column {
-  float: left;
-  width: 50%;
-}
 
 /* Clear floats after the columns */
 .row:after {
