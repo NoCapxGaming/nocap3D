@@ -592,32 +592,32 @@ width: 50px;
    user-select: none;
    -webkit-user-select: none;
  }
-#gallery_b{
+#gallery_b:hover{
   color: black;
   background: white;
   border-color: gray;
 }
-#gallery_b:hover{
+#gallery_b{
   color: white;
   background: black ;
   border-color: white;
 }
-#artstation_b{
+#artstation_b:hover {
   color: #00C8E7;
   background: navy;
   border-color: gray;
 }
-#artstation_b:hover{
+#artstation_b{
   color: navy;
   background: #00C8E7 ;
   border-color: navy;
 }
-#zedge_b {
+#zedge_b:hover {
   color: gold;
   background: #BD3BFF
 
 }
-#zedge_b:hover {
+#zedge_b {
   color: #BD3BFF;
   background: gold;
   border-color: #BD3BFF;
