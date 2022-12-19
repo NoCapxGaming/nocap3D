@@ -246,6 +246,7 @@ width: 50px;
   height: auto;
   top: 2em;
   position: flex;
+  overflow: hidden;
 }
 
 .centerlinks {
@@ -475,7 +476,7 @@ width: 50px;
     margin-bottom: 5em;
   }
   #wallpapervideos {
-    max-width: 150px;
+    max-width: 200px;
   }
   .topnav a {
     font-size: 18px;
@@ -498,37 +499,7 @@ width: 50px;
     background-color: gray;
     border-color: white;
 }
-@media screen and (max-width: 600px) {
-  .fa {
-    padding: 18px;
-    font-size: 20px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    margin: 5px 2px;
-  }
-  .fa:hover {
-      background-color: black;
-      border-color: white;
-  }
-}
-@media screen and (max-width: 400px) {
-  .fa {
-    display: inline;
-    padding: 15px;
-    font-size: 15px;
-    width: 15px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    margin: 5px 2px;
-  }
-  .fa:hover {
-      background-color: black;
-      border-color: white;
-  }
-}
+
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
@@ -578,4 +549,176 @@ width: 50px;
 .fa-instagram {
   background: #125688;
   color: white;
+}
+ /* Image Grid CSS Hover Effect*/
+
+ /* CSS */
+ .button-85 {
+   font-size: 22px;
+   font-family: 'Unbounded', cursive;
+   font-weight: 900;
+   letter-spacing: 3px;
+   padding: .2em 2em;
+   color: white;
+   background: black;
+   cursor: pointer;
+   position: relative;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+   text-align: center;
+   z-index: 0;
+   border-radius: 20px;
+   border-width: 5px;
+   user-select: none;
+   -webkit-user-select: none;
+ }
+ .button-85:hover {
+   font-size: 22px;
+   font-family: 'Unbounded', cursive;
+   font-weight: 900;
+   letter-spacing: 3px;
+   padding: .2em 2em;
+   color: white;
+   background: gray;
+   cursor: pointer;
+   position: relative;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+   text-align: center;
+   z-index: 0;
+   border-radius: 20px;
+   user-select: none;
+   -webkit-user-select: none;
+ }
+#gallery_b{
+  color: black;
+  background: white;
+  border-color: gray;
+}
+#gallery_b:hover{
+  color: white;
+  background: black ;
+  border-color: white;
+}
+#artstation_b{
+  color: #00C8E7;
+  background: navy;
+  border-color: gray;
+}
+#artstation_b:hover{
+  color: navy;
+  background: #00C8E7 ;
+  border-color: navy;
+}
+#zedge_b {
+  color: gold;
+  background: #BD3BFF
+
+}
+#zedge_b:hover {
+  color: #BD3BFF;
+  background: gold;
+  border-color: #BD3BFF;
+}
+ .vertical-center {
+   margin-left: 50%;
+   margin-top: 1em;
+   position: relative;
+   inline-size: 75%;
+   transform: translate(-50%, -50%);
+   display: inline-block;
+ }
+ .button-center {
+   margin-left: 50%;
+   margin-top: 1em;
+   inline-size: 70%;
+   transform: translate(-50%, -50%);
+   display: inline-block;
+ }
+#downloadsh1 {
+  margin-bottom: 4em;
+}
+@media screen and (max-width: 600px) {
+  .fa {
+    padding: 18px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px 2px;
+  }
+  .fa:hover {
+      background-color: black;
+      border-color: white;
+  }
+  #downloadsh1 {
+    margin-bottom: 3em;
+  }
+  .button-85 {
+    font-size: 14px;
+    font-family: 'Unbounded', cursive;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding: .2em 2em;
+    color: white;
+    background: black;
+    cursor: pointer;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    z-index: 0;
+    border-radius: 20px;
+    border-width: 5px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .button-85:hover {
+    font-size: 14px;
+    font-family: 'Unbounded', cursive;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding: .2em 2em;
+    color: white;
+    background: gray;
+    cursor: pointer;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    z-index: 0;
+    border-radius: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .fa {
+    display: inline;
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px 2px;
+  }
+  .fa:hover {
+      background-color: black;
+      border-color: white;
+  }
+  .button-85 {
+     font-size: 12px;
+   }
+   .button-85:hover {
+      font-size: 12px;
+    }
+   #downloadsh1 {
+     margin-bottom: 3em;
+   }
 }
