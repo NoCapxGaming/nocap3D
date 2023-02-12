@@ -75,9 +75,16 @@
       <source src="media/video/caprotate.webm" type="video/mp4">
     </video>
   </div>-->
-  <div style="width: 40vw; min-width: 350px; height: calc(40vw / 16 * 9); position: relative; margin: auto;">
-    <iframe id="twitch_player" width="100%" height="100%" src="https://player.twitch.tv/?channel=nocapxgaming&muted=true&parent=nocap3d.art" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in- picture; fullscreen"  style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-    </iframe>
+  <style>
+    @media only screen and (min-width: 768px) {
+      .player-container {
+        width: 50%;
+      }
+    }
+  </style>
+
+  <div class="player-container" style="left: 0; right: 0; margin: 0 auto; max-height: 350px; width: 60%; overflow: hidden; position: relative; padding-bottom: 56.25%;">
+    <iframe src="https://player.twitch.tv/?channel=nocapxgaming&autoplay=false&parent=www.nocap3d.art&parent=iframe.ly&parent=cdn.iframe.ly&parent=iframely.net&parent=iframely.com&parent=if-cdn.com" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen scrolling="no" allow="encrypted-media;"></iframe>
   </div>
 
 
